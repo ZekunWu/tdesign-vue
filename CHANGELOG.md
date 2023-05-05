@@ -5,6 +5,33 @@ toc: false
 docClass: timeline
 ---
 
+## 🌈 1.3.0 `2023-04-27` 
+### 🚀 Features
+- `StickyTool`: 新增 `StickyTool` 侧边栏组件 @ZekunWu ([#2213](https://github.com/Tencent/tdesign-vue/pull/2213))
+- `BackTop`: 新增 `BackTop` 回到顶部组件 @uyarn @shinyina ([#2368](https://github.com/Tencent/tdesign-vue/pull/2368))
+- `Input`: 支持在 disabled 状态下，hover 时提示展示全部内容 @uyarn ([#2372](https://github.com/Tencent/tdesign-vue/pull/2372))
+### 🐞 Bug Fixes
+- `Select`: 修复多选下尺寸的样式问题 @uyarn ([#2349](https://github.com/Tencent/tdesign-vue/pull/2349))
+- `Table`: 修复 SSR 服务端渲染报错问题 @chaishi ([#2357](https://github.com/Tencent/tdesign-vue/pull/2357))
+- `Datepicker`:  
+  - 修复单独使用 `DatePickerPanel`，且启用 enable-time-picker 时，时分秒无法双向绑定且无法滚动的问题 @Ericleungs ([#2353](https://github.com/Tencent/tdesign-vue/pull/2353))
+  - 修复在时间戳模式下 panel 会显示 Invalid value 的问题 @Ericleungs ([common#1268](https://github.com/Tencent/tdesign-common/pull/1268))
+  - 修复第二次点击面板关闭异常问题 @honkinglin ([#2373](https://github.com/Tencent/tdesign-vue/pull/2373))
+- `Space`: 修复插槽丢失响应式的缺陷 @uyarn ([#2372](https://github.com/Tencent/tdesign-vue/pull/2372))
+
+## 🌈 1.2.7 `2023-04-20` 
+### 🚀 Features
+- `Datepicker`: 新增 `onPresetClick` 事件 @honkinglin ([#2342](https://github.com/Tencent/tdesign-vue/pull/2342))
+### 🐞 Bug Fixes
+- `DatePicker`: 修复时间戳模式下控制台警告 props 类型错误的问题 @Ericleungs ([#2328](https://github.com/Tencent/tdesign-vue/pull/2328))
+- `Table`: 修复table组件在开启固定列单列 resizable 禁用时，相邻 resizable 启用的列列宽调整范围与预期不一致的问题 @chuyueZhang ([#2335](https://github.com/Tencent/tdesign-vue/pull/2335))
+- `Cascader`: 修复 `valueType = full` 模式下，设置 `minCollapsedNum` 渲染报错的问题 @xiaosansiji ([#2343](https://github.com/Tencent/tdesign-vue/pull/2343))
+- `ColorPicker`: 修复渐变模式下 `hex` 和 `rgb` 模式下输入无法修改渐变点颜色的缺陷 @uyarn ([common#1289](https://github.com/Tencent/tdesign-common/pull/1289))
+- Popup: 修复 nuxt 环境中报错的问题 @uyarn (https://github.com/Tencent/tdesign-vue/pull/2347)
+### 🚧 Others
+- `文档`: icon 调整 manifest 统一入口导出 esm 模块说明 @Layouwen ([#2341](https://github.com/Tencent/tdesign-vue/pull/2341))
+- `主题生成器`: 官网主题生成器升级 1.0 版本，支持色彩智能推荐及尺寸调整，新增腾讯云皮肤 @uyarn ([#2345](https://github.com/Tencent/tdesign-vue/pull/2345))
+
 ## 🌈 1.2.6 `2023-04-13` 
 ### 🚀 Features
 - `Loading`: 完善指令使用方式，支持 `v-loading` 配置复杂属性 @akinocccc ([#2318](https://github.com/Tencent/tdesign-vue/pull/2318))
